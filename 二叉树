@@ -1,0 +1,25 @@
+#include<stdio.h>  
+#include<stdlib.h>  
+ 
+typedef struct TreeNode  
+{  
+    char ch;                  
+    struct Tree *l;  
+    struct Tree *r;    
+}B,*P;  
+void createBTree(P *root)  
+{  
+    char ch;  
+    ch=getchar();  
+    if(ch=='#')  
+        *root=NULL;  
+    else
+    {  
+        *root=(P)m(sizeof(B));  
+        (*root)->ch=ch;  
+        (*root)->l=NULL;  
+        (*root)->r=NULL;  
+        Tree(&(*root)->l);  
+        Tree(&(*root)->r);  
+    }  
+}  好难啊 不会了
